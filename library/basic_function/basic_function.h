@@ -8,4 +8,6 @@
 #include <stdbool.h>
 
 int BF_maxInt(int lhs, int rhs);
+void BF_PrintLine();
+void BF_PrintLineSetLength(const unsigned int len);
 #endif

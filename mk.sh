@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-if gcc -g *.c ./library/tree/*.c  ./library/basic_function/*.c -o test
+if gcc -g *.c ./library/tree/*.c  ./library/basic_function/*.c ./library/list/*.c -o test
 then
     echo "Created Successfully"
     echo "------------------------------"

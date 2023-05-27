@@ -6,6 +6,9 @@
 
 #ifndef HEADFILE_H_
 #define HEADFILE_H_
+//链表相关
+#include "list/list.h"
+
 // 树相关
 #include "tree/search_tree.h"
 #include "tree/avl_tree.h"

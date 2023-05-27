@@ -31,6 +31,23 @@ int main() {
     AvlTree_Delete(avlTree, 24);
     AvlTree_Delete(avlTree, 69);
     AvlTree_PrintTree(avlTree);
+    AvlTree_MakeEmpty(avlTree);
     printf("------------------------------\n");
+
+
+    //---------------List Test---------------//
+    List list = List_Init();
+    List_Add(list, 20);
+    List_Add(list, 28);
+    List_Add(list, 40);
+    List_Add(list, 27);
+    List_Add(list, 88);
+    List_Add(list, 6);
+    List_Insert(list, 27, 4);
+    List_Insert(list, 20, 54);
+    List_Delete(list, 27);
+    List_PrintList(list);
+    List_MakeEmpty(list);
+    BF_PrintLine();
     return 0;
 }
