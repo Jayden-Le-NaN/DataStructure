@@ -58,7 +58,7 @@ SearchTree SearchTree_Find(SearchTree tree, int data) {
  * @author          JAYDEN_NAN
  */
 SearchTreePos SearchTree_FindMin(SearchTree tree) {
-    if (tree->left != NULL) 
+    if (tree != NULL && tree->left != NULL) 
         return SearchTree_FindMin(tree->left);
     return tree;
 }
@@ -69,7 +69,7 @@ SearchTreePos SearchTree_FindMin(SearchTree tree) {
  * @author          JAYDEN_NAN
  */
 SearchTreePos SearchTree_FindMax(SearchTree tree) {
-    if (tree->right != NULL)
+    if (tree != NULL && tree->right != NULL)
         return SearchTree_FindMin(tree->right);
     return tree;
 }
@@ -119,7 +119,7 @@ SearchTree SearchTree_Delete(SearchTree tree, int data) {
     else if (tree->right && tree->left) {
         //two children
         //found element to be deleted
-        //replace with smallest in right right subtree
+        //replace with smallest in right subtree
         tree->data = SearchTree_FindMin(tree->right)->data;
         tree->right = SearchTree_Delete(tree->right, data);
     }
